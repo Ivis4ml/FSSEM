@@ -5,5 +5,5 @@ source("fssem.R")               ### FSSEM algorithm & cross-validation related f
 source("util.R")                ### utility funcitons
 source("stabsel.R")             ### stability selection
 
-########## compressed solver of FSSEM integrated in solver_min. For convinience, directly source solver_min.R
-########## source("solver_min.R") 
+########## compressed solver of FSSEM integrated in solver_min. For convinience, directly source solver.min.R
+########## source("solver.min.R") 
