@@ -1,7 +1,7 @@
-#### select subset of hyper-parameter with in 1 sd
+#### select subset of hyper-parameters within 1 standard error
 ############# new version
 ## ultility functions
-## pick lambda
+## select top k lambda and rho tuple by user define for stability selection
 subLambda_ss = function(cvparams,
                         type = c("err", "loglik"),
                         ntop = 10) {
