@@ -7,4 +7,4 @@ we save intermediate data of FSSEM as `./inst/GE_NSCLC.rds`(Gene expression matr
 
 
 ### Simulation data
-If you are using LSF server, you can use `run_SIM.R` to build simulation jobs and plot simulationb result.
+If you are using LSF server, you can use `./inst/run_SIM.R` to build simulation jobs to submit to LSF server and then plot simulation result.
