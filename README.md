@@ -14,7 +14,7 @@ source("./src/solver.min.R")
 ```
 
 # Input format
-For now, the fssem function `multiSML_iPALM` or `genSML_iPALM` requires data of gene expression and genetic perturbation data(eQTL data).
+For now, the fssem function `multiSML_iPALM` or `genSML_iPALM` requires data of gene expression and genetic perturbation data(eQTL data). `multiSML_iPALM`: run FSSEM if `X1=X2`; `genSML_iPALM`: run FSSEM if `X1 != X2`.
 
 I use the `list` data for representing the info of all data. One `data` list has two elements:
 
@@ -35,9 +35,11 @@ source("./src/demo.R")
 
 Run `demo.R` code in `src` folder. And in this demo, you can simulate gene expression and genetic perturbation
 data with random generated network structures. You can randomly generate networks with parameters: 
-* `N`, sample size per each condition; 
-* `Ng`, gene number; `Ne`, eQTL number; 
-* `Ns`, sparse ratio of gene network(number of nonzero entries per gene).
-* `sigma`, noise standard deviation.
+
++ `N`, sample size per each condition; 
++ `Ng`, gene number; 
++ `Ne`, eQTL number; 
++ `Ns`, sparse ratio of gene network(number of nonzero entries per gene).
++ `sigma`, noise standard deviation.
 
 

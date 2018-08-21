@@ -1,4 +1,4 @@
-# data preprocessing for the LSCNC data in paper.
+# data preprocessing for the NSCLC data in paper.
 ### download CCLE data: GSE33356
 ### GPL570 GPL6801;
 library(GEOquery)
