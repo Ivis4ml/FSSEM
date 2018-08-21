@@ -35,9 +35,9 @@ source("./src/demo.R")
 
 Run `demo.R` code in `src` folder. And in this demo, you can simulate gene expression and genetic perturbation
 data with random generated network structures. You can randomly generate networks with parameters: 
-`N`, sample size per each condition; 
-`Ng`, gene number; `Ne`, eQTL number; 
-`Ns`, sparse ratio of gene network(number of nonzero entries per gene).
-`sigma`, noise standard deviation.
+* `N`, sample size per each condition; 
+* `Ng`, gene number; `Ne`, eQTL number; 
+* `Ns`, sparse ratio of gene network(number of nonzero entries per gene).
+* `sigma`, noise standard deviation.
 
 
