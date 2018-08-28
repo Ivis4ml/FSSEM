@@ -1806,7 +1806,7 @@ multiSML_iPALM = function(Bs,
         Li
       })
       Li   = max(Lis)
-      Li   = (1 + inert.pars) * Li / (1 - inert.pars)
+      Li   = (1 + 2 * inert.pars) * Li / (2 * (1 - inert.pars))
       detZero = TRUE
       cl      = 1
       while(detZero) {
@@ -2944,7 +2944,7 @@ genSML_iPALM = function(Bs,
                        Ng)[1]
       })
       Li   = max(Lis)
-      Li   = (1 + inert.pars) * Li / (1 - inert.pars)
+      Li   = (1 + 2 * inert.pars) * Li / (2 * (1 - inert.pars))
       ui   = lapply(1:K, function(k) {
         bi[[k]] - gi[[k]] / Li
       })
@@ -4091,7 +4091,7 @@ genSML_iPALM = function(Bs,
                        Ng)[1]
       })
       Li   = max(Lis)
-      Li   = (1 + inert.pars) * Li / (1 - inert.pars)
+      Li   = (1 + 2 * inert.pars) * Li / (2 * (1 - inert.pars))
       detZero = TRUE
       cl   = 1
       while (detZero) {
