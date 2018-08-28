@@ -1410,7 +1410,7 @@ multiSML_iPALM = function(Bs,
         Li
       })
       Li   = max(Lis)
-      Li   = (1 + inert.pars) * Li / (1 - inert.pars)
+      Li   = (1 + 2 * inert.pars) * Li / (2 * (1 - inert.pars))
       detZero = TRUE
       cl      = 1
       while(detZero) {
@@ -2284,7 +2284,7 @@ genSML_iPALM = function(Bs,
                        Ng)[1]
       })
       Li   = max(Lis)
-      Li   = (1 + inert.pars) * Li / (1 - inert.pars)
+      Li   = (1 + 2 * inert.pars) * Li / (2 * (1 - inert.pars))
       ui   = lapply(1:K, function(k) {
         bi[[k]] - gi[[k]] / Li
       })
@@ -2751,15 +2751,6 @@ optLasso_cv = function(cvparams, se = TRUE) {
   }
 }
 
-
-## adaptive lasso for fused lasso problem
-#' @description AL method for single problem and fused lasso
-#' ####
-
-
-## 2-stage least square method for fused lasso problem
-#' @description 2SLS method for single problem and fused lasso
-#' ####
 
 
 ## stability selection
@@ -3430,7 +3421,7 @@ genSML_iPALM = function(Bs,
                        Ng)[1]
       })
       Li   = max(Lis)
-      Li   = (1 + inert.pars) * Li / (1 - inert.pars)
+      Li   = (1 + 2 * inert.pars) * Li / (2 * (1 - inert.pars))
       detZero = TRUE
       cl   = 1
       while (detZero) {
