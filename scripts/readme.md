@@ -5,7 +5,7 @@ Run `run_FSSEM.R` to do FSSEM analysis of real data GSE33356
 ## Intermediate data for NSCLC real data analysis
 we save intermediate data of FSSEM as `./data/GE_NSCLC.rds`(Gene expression matrix) and `./data/SNP_NSCLC.rds`(eQTL quantative matrix), which are processed GSE33356 data.
 
-### Preequirments
+### Requirements
 + Create real data analysis workspace `exp` by command `mkdir exp`
 + `cd exp`
 + Downloading `GSE33356_family.soft.gz` from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33356
