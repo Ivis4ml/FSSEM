@@ -1817,7 +1817,7 @@ multiSML_iPALM = function(Bs,
           wB[i, -i]
         })
         rBi  = rB[i, -i]
-        xi   = prox_flsa(lambda, rho, Li, ui, wBi, rBi)
+        xi   = prox_flsa(lambda, rho, cl * Li, ui, wBi, rBi)
         dIBu  = sapply(1:K, function(k) {
           IBsinv[[k]][i, i] - (t(xi[[k]]) %*% IBsinv[[k]][-i, i, drop = F])[1]
         })
@@ -4085,13 +4085,13 @@ genSML_iPALM = function(Bs,
       cl   = 1
       while (detZero) {
         ui   = lapply(1:K, function(k) {
-          bi[[k]] - gi[[k]] / Li
+          bi[[k]] - gi[[k]] / (cl * Li)
         })
         wBi  = lapply(wBs, function(wB) {
           wB[i, -i]
         })
         rBi  = rB[i, -i]
-        xi   = prox_flsa(lambda, rho, Li, ui, wBi, rBi)
+        xi   = prox_flsa(lambda, rho, cl * Li, ui, wBi, rBi)
         dIBu  = sapply(1:K, function(k) {
           IBsinv[[k]][i, i] - (t(xi[[k]]) %*% IBsinv[[k]][-i, i, drop = F])[1]
         })
